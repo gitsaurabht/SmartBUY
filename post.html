@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="nav.css">
+     <link rel="stylesheet" href="post.css">
+      <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+          <i class="fas fa-user-graduate"><h1>CampusMart</h1></i> 
+          <ul><a href="main_page.html">Home</a></ul>
+          <ul><a href="post.html">Post Items</a></ul>
+          <ul><a href="cart.html">My Cart</a></ul>
+          <div class="search">
+             <i class="fas fa-search"></i>
+             <input type="text" placeholder="Search...for items" class="item_search">
+          </div>
+          <button class="ham"><i class="fas fa-bars"></i>
+</button>
+     </div>
+   <div class="user_content">
+                <button><a href="#">Profile</a></button>
+                <button><a href="#">Setting</a></button>
+                  <button><a href="index.html">Logout</a></button>
+   </div>
+
+   
+
+<div class="form-container">
+    <h2>Post Your Item</h2>
+    <form>
+      <label for="name">Product Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter product name" required>
+
+       <label for="price">Price (INR)</label>
+      <input type="number" id="price" name="price" placeholder="Enter price" required>
+
+      <label for="category">Category</label>
+        <select id="category" name="category" required>
+          <option value="" disabled selected>Select a category</option>
+          <option value="application">Application</option>
+          <option value="furniture">Furniture</option>
+          <option value="books">Books</option>
+          <option value="clothes">Clothes</option>
+          <option value="decoration">Decoration</option>
+          <option value="electronics">Electronics</option>
+          <option value="stationery">Stationery</option>
+          <option value="sports">Sports</option>
+          <option value="music">Musical Instruments</option>
+          <option value="others">Others</option>
+</select>
+
+
+      <label for="price">Price (INR)</label>
+      <input type="number" id="price" name="price" placeholder="Enter price" required>
+
+      <label for="image">Upload Image</label>
+      <input type="file" id="image" name="image" accept=".png, .jpg, .jpeg" required>
+
+      <label for="desc">Description</label>
+      <textarea id="desc" name="desc" rows="4" placeholder="Enter product description" required></textarea>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter contact number" required>
+
+      <button type="submit">Post Item</button>
+    </form>
+  </div>
+
+
+
+   <script src="nav.js"></script>
+   </body>
+   <footer class="footer">
+  <div class="footer-content">
+    <h3>Student Mart</h3>
+    <p>Helping students buy & sell their essentials easily.</p>
+    <div class="footer-links">
+      <a href="mailto:sauravthakulla683@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i> sauravthakulla683@gmail.com
+      </a>
+      <a href="https://twitter.com/@tea_hyper" target="_blank">
+        <i class="fab fa-twitter"></i> @saurav_t
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Student Mart. All rights reserved.</p>
+  </div>
+</footer>
